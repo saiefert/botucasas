@@ -1,0 +1,448 @@
+{
+  "cidade": "Botucatu e região - SP",
+  "centro": { "lat": -22.8858, "lng": -48.4450 },
+  "referencia": [
+    {
+      "id": "ref-casa-tata",
+      "nome": "Casa Tata",
+      "subtitulo": "Rua Delfim da Graça Cardoso, 1197 — Alto",
+      "endereco": "Rua Delfim da Graça Cardoso, 1197, Alto, Botucatu - SP, 18601-542",
+      "tipo": "casa_tata",
+      "cor": "#be185d",
+      "lat": -22.8888,
+      "lng": -48.4322,
+      "detalhe": "Ponto de referência principal: Casa Tata — Rua Delfim da Graça Cardoso, 1197, Alto (Vila Auxiliadora), Botucatu - SP, CEP 18601-542."
+    }
+  ],
+  "bairros": {
+    "centro": { "lat": -22.8858, "lng": -48.4450 },
+    "alto": { "lat": -22.8878, "lng": -48.4345 },
+    "bairro alto": { "lat": -22.8878, "lng": -48.4345 },
+    "vila auxiliadora": { "lat": -22.8888, "lng": -48.4322 },
+    "vila santa clara": { "lat": -22.8842, "lng": -48.4330 },
+    "vila bela vista": { "lat": -22.8828, "lng": -48.4320 },
+    "vila dos lavradores": { "lat": -22.8742, "lng": -48.4455 },
+    "vila assumpcao": { "lat": -22.8875, "lng": -48.4438 },
+    "vila maria": { "lat": -22.8775, "lng": -48.4388 },
+    "vila real": { "lat": -22.8712, "lng": -48.4290 },
+    "vila paulista": { "lat": -22.8792, "lng": -48.4525 },
+    "vila antartica": { "lat": -22.8935, "lng": -48.4488 },
+    "vila padovan": { "lat": -22.8895, "lng": -48.4515 },
+    "jardim paraiso": { "lat": -22.8648, "lng": -48.4425 },
+    "jardim panorama": { "lat": -22.8655, "lng": -48.4630 },
+    "jardim bom pastor": { "lat": -22.8930, "lng": -48.4395 },
+    "jardim cristina": { "lat": -22.8705, "lng": -48.4545 },
+    "jardim eldorado": { "lat": -22.8615, "lng": -48.4548 },
+    "jardim brasil": { "lat": -22.8770, "lng": -48.4325 },
+    "jardim reflora": { "lat": -22.8960, "lng": -48.4555 },
+    "jardim planalto": { "lat": -22.8995, "lng": -48.4430 },
+    "jardim ipyranga": { "lat": -22.8955, "lng": -48.4280 },
+    "jardim botucatu": { "lat": -22.8685, "lng": -48.4360 },
+    "jardim santa monica": { "lat": -22.8810, "lng": -48.4615 },
+    "parque marajoara": { "lat": -22.8565, "lng": -48.4465 },
+    "convivio": { "lat": -22.8990, "lng": -48.4325 },
+    "chacara floresta": { "lat": -22.8825, "lng": -48.4255 },
+    "boa vista": { "lat": -22.8890, "lng": -48.4250 },
+    "residencial cedro": { "lat": -22.8520, "lng": -48.4355 },
+    "santa maria": { "lat": -22.8680, "lng": -48.4695 },
+    "altos da serra": { "lat": -22.9055, "lng": -48.4210 },
+    "rubiao junior": { "lat": -22.8919, "lng": -48.4894 },
+    "demetria": { "lat": -22.9225, "lng": -48.4670 },
+    "bairro demetria": { "lat": -22.9225, "lng": -48.4670 },
+    "vitoriana": { "lat": -22.7810, "lng": -48.4015 },
+    "cesar neto": { "lat": -22.9080, "lng": -48.5220 },
+    "rio bonito": { "lat": -22.7080, "lng": -48.3550 },
+    "pardinho": { "lat": -23.0811, "lng": -48.3736 },
+    "itatinga": { "lat": -23.1017, "lng": -48.6158 },
+    "sao manuel": { "lat": -22.7308, "lng": -48.5708 },
+    "pratania": { "lat": -22.8078, "lng": -48.6658 },
+    "bofete": { "lat": -23.1022, "lng": -48.2578 },
+    "anhembi": { "lat": -22.7887, "lng": -48.1275 }
+  },
+  "pois": [
+    {
+      "id": "pet-praca-bosque",
+      "nome": "Passeio Pet — Praça do Bosque",
+      "categoria": "pet",
+      "lat": -22.8861,
+      "lng": -48.4452,
+      "detalhe": "Praça central arborizada (Praça Emílio Pedutti) muito frequentada para caminhadas com pets."
+    },
+    {
+      "id": "pet-parque-municipal",
+      "nome": "Trilha & Gramado Pet — Parque Municipal",
+      "categoria": "pet",
+      "lat": -22.8598,
+      "lng": -48.4384,
+      "detalhe": "Ampla área verde no Jardim Paraíso ótima para passeios ao ar livre."
+    },
+    {
+      "id": "pet-largo-catedral",
+      "nome": "Gramado & Passeio Pet — Praça Rubião Júnior (Catedral)",
+      "categoria": "pet",
+      "lat": -22.8850,
+      "lng": -48.4418,
+      "detalhe": "Espaço amplo no alto da Catedral Sant'Ana com árvores e sombra no fim de tarde."
+    },
+    {
+      "id": "pet-praca-lavradores",
+      "nome": "Praça Isabel Arruda — Vila dos Lavradores",
+      "categoria": "pet",
+      "lat": -22.8745,
+      "lng": -48.4452,
+      "detalhe": "Praça arborizada tradicional da Vila dos Lavradores para passeios tranquilos."
+    },
+    {
+      "id": "pet-praca-alto",
+      "nome": "Praça Comendador Emílio Pedutti / Alto",
+      "categoria": "pet",
+      "lat": -22.8872,
+      "lng": -48.4355,
+      "detalhe": "Área de convivência e praça residencial no Bairro Alto próxima à Rua Delfim da Graça Cardoso."
+    },
+
+    {
+      "id": "parque-municipal",
+      "nome": "Parque Municipal Joaquim Amaral Amando de Barros",
+      "categoria": "parque",
+      "lat": -22.8598,
+      "lng": -48.4384,
+      "detalhe": "Principal parque urbano de Botucatu: lago, mata nativa, trilhas e pista de caminhada."
+    },
+    {
+      "id": "parque-jardim-botanico",
+      "nome": "Jardim Botânico — UNESP Rubião Júnior",
+      "categoria": "parque",
+      "lat": -22.8935,
+      "lng": -48.4975,
+      "detalhe": "Área de preservação e trilhas ecológicas junto ao campus da UNESP em Rubião Júnior."
+    },
+    {
+      "id": "parque-fazenda-lageado",
+      "nome": "Fazenda Lageado (UNESP) — Área Verde",
+      "categoria": "parque",
+      "lat": -22.8465,
+      "lng": -48.4268,
+      "detalhe": "Fazenda histórica com museu do café, lagos, alamedas de palmeiras e trilhas."
+    },
+    {
+      "id": "parque-veu-noiva",
+      "nome": "Parque Natural & Cachoeira Véu de Noiva",
+      "categoria": "parque",
+      "lat": -22.9278,
+      "lng": -48.4585,
+      "detalhe": "Complexo turístico com cachoeira, trilha e área de lazer na região do Demétria."
+    },
+    {
+      "id": "parque-pedra-indio",
+      "nome": "Mirante da Pedra do Índio (Cuesta)",
+      "categoria": "parque",
+      "lat": -22.9520,
+      "lng": -48.4145,
+      "detalhe": "Cartão-postal da Cuesta de Botucatu com vista panorâmica para o vale e pôr do sol."
+    },
+    {
+      "id": "parque-praca-bosque",
+      "nome": "Praça do Bosque (Centro)",
+      "categoria": "parque",
+      "lat": -22.8861,
+      "lng": -48.4452,
+      "detalhe": "Marco zero de Botucatu, rodeado de árvores centenárias, feiras e comércio."
+    },
+
+    {
+      "id": "acad-smart-centro",
+      "nome": "Smart Fit — Botucatu Centro",
+      "categoria": "academia",
+      "lat": -22.8868,
+      "lng": -48.4430,
+      "detalhe": "Academia completa com musculação, cardio e aulas coletivas na região central."
+    },
+    {
+      "id": "acad-lavradores",
+      "nome": "Academia — Vila dos Lavradores",
+      "categoria": "academia",
+      "lat": -22.8752,
+      "lng": -48.4445,
+      "detalhe": "Musculação e treinamento funcional próximos à Rua Major Matheus."
+    },
+    {
+      "id": "acad-paraiso",
+      "nome": "Academia — Jardim Paraíso",
+      "categoria": "academia",
+      "lat": -22.8662,
+      "lng": -48.4418,
+      "detalhe": "Academia de bairro com fácil estacionamento na Av. Prof. Raphael Laurindo."
+    },
+    {
+      "id": "acad-alto",
+      "nome": "Studio Pilates & Treino — Bairro Alto",
+      "categoria": "academia",
+      "lat": -22.8865,
+      "lng": -48.4352,
+      "detalhe": "Treinamento funcional e pilates na região do Alto / Vila Auxiliadora."
+    },
+    {
+      "id": "acad-shopping",
+      "nome": "Academia — Região Shopping Park Botucatu",
+      "categoria": "academia",
+      "lat": -22.8718,
+      "lng": -48.4295,
+      "detalhe": "Estrutura moderna na Vila Real com estacionamento amplo."
+    },
+
+    {
+      "id": "merc-confianca",
+      "nome": "Confiança Supermercados — Vila Assumpção",
+      "categoria": "mercado",
+      "lat": -22.8872,
+      "lng": -48.4441,
+      "detalhe": "Supermercado completo na Rua Emílio Cani com padaria, açougue e hortifrúti."
+    },
+    {
+      "id": "merc-jau-centro",
+      "nome": "Jaú Serve — Centro",
+      "categoria": "mercado",
+      "lat": -22.8885,
+      "lng": -48.4452,
+      "detalhe": "Supermercado amplo na Av. Marechal Floriano Peixoto."
+    },
+    {
+      "id": "merc-shopping",
+      "nome": "Shopping Park Botucatu & Supermercado",
+      "categoria": "mercado",
+      "lat": -22.8710,
+      "lng": -48.4285,
+      "detalhe": "Principal shopping de Botucatu com lojas, cinemas, praça de alimentação e mercado."
+    },
+    {
+      "id": "merc-lavradores",
+      "nome": "Supermercado — Vila dos Lavradores",
+      "categoria": "mercado",
+      "lat": -22.8732,
+      "lng": -48.4462,
+      "detalhe": "Comércio forte na Rua Major Matheus, prático para compras do dia a dia."
+    },
+    {
+      "id": "merc-paraiso",
+      "nome": "Supermercado — Jardim Paraíso",
+      "categoria": "mercado",
+      "lat": -22.8645,
+      "lng": -48.4435,
+      "detalhe": "Mercado de bairro com padaria e açougue no Jardim Paraíso."
+    },
+    {
+      "id": "merc-demetria",
+      "nome": "Empório Orgânico — Bairro Demétria",
+      "categoria": "mercado",
+      "lat": -22.9212,
+      "lng": -48.4658,
+      "detalhe": "Produtos orgânicos, biodinâmicos, laticínios artesanais e padaria no Demétria."
+    },
+
+    {
+      "id": "cafe-demetria",
+      "nome": "Café & Padaria Artesanal — Demétria",
+      "categoria": "cafe",
+      "lat": -22.9220,
+      "lng": -48.4662,
+      "detalhe": "Pães de fermentação natural, queijos locais e cafés especiais em meio à natureza."
+    },
+    {
+      "id": "cafe-centro",
+      "nome": "Cafés & Padarias — Rua Amando de Barros",
+      "categoria": "cafe",
+      "lat": -22.8854,
+      "lng": -48.4435,
+      "detalhe": "Principal corredor comercial do Centro com padarias tradicionais e cafeterias."
+    },
+    {
+      "id": "cafe-alto",
+      "nome": "Padaria & Café — Bairro Alto",
+      "categoria": "cafe",
+      "lat": -22.8879,
+      "lng": -48.4342,
+      "detalhe": "Padaria tradicional próxima à Vila Auxiliadora e Alto."
+    },
+    {
+      "id": "cafe-lavradores",
+      "nome": "Padaria — Vila dos Lavradores",
+      "categoria": "cafe",
+      "lat": -22.8748,
+      "lng": -48.4448,
+      "detalhe": "Café da manhã e pães frescos na região da Major Matheus."
+    },
+
+    {
+      "id": "saude-hc-unesp",
+      "nome": "Hospital das Clínicas (HCFMB — UNESP)",
+      "categoria": "saude",
+      "lat": -22.8897,
+      "lng": -48.4954,
+      "detalhe": "Maior complexo hospitalar e referência em saúde de toda a região de Botucatu."
+    },
+    {
+      "id": "saude-misericordia",
+      "nome": "Hospital Misericórdia Botucatu",
+      "categoria": "saude",
+      "lat": -22.8818,
+      "lng": -48.4455,
+      "detalhe": "Hospital e pronto atendimento tradicional na região central."
+    },
+    {
+      "id": "saude-unimed",
+      "nome": "Hospital Unimed Botucatu",
+      "categoria": "saude",
+      "lat": -22.8785,
+      "lng": -48.4368,
+      "detalhe": "Pronto atendimento 24h e estrutura hospitalar completa."
+    },
+    {
+      "id": "saude-upa-botucatu",
+      "nome": "Pronto Socorro / UPA Adulto — Botucatu",
+      "categoria": "saude",
+      "lat": -22.8805,
+      "lng": -48.4472,
+      "detalhe": "Pronto atendimento de urgência e emergência com acesso rápido de carro."
+    },
+    {
+      "id": "saude-vet-unesp",
+      "nome": "Hospital Veterinário — UNESP Botucatu",
+      "categoria": "saude",
+      "lat": -22.8886,
+      "lng": -48.4968,
+      "detalhe": "Referência nacional em medicina veterinária (pequenos e grandes animais)."
+    },
+
+    {
+      "id": "farm-raia-centro",
+      "nome": "Droga Raia — Rua Amando de Barros (Centro)",
+      "categoria": "farmacia",
+      "lat": -22.8857,
+      "lng": -48.4439,
+      "detalhe": "Farmácia completa com entrega e amplo estoque de medicamentos de uso contínuo."
+    },
+    {
+      "id": "farm-drogasil-alto",
+      "nome": "Drogasil — Av. Dom Lúcio / Bairro Alto",
+      "categoria": "farmacia",
+      "lat": -22.8869,
+      "lng": -48.4375,
+      "detalhe": "Farmácia com estacionamento fácil próxima ao Bairro Alto e Casa Tata."
+    },
+    {
+      "id": "farm-sp-lavradores",
+      "nome": "Drogaria São Paulo — Vila dos Lavradores",
+      "categoria": "farmacia",
+      "lat": -22.8741,
+      "lng": -48.4451,
+      "detalhe": "Farmácia tradicional na Rua Major Matheus com atendimento estendido."
+    },
+    {
+      "id": "farm-vital-brasil",
+      "nome": "Farmácia 24h — Av. Vital Brasil / Jd. Paraíso",
+      "categoria": "farmacia",
+      "lat": -22.8695,
+      "lng": -48.4442,
+      "detalhe": "Plantão 24 horas em corredor principal, prática para ir de carro."
+    },
+    {
+      "id": "farm-assumpcao",
+      "nome": "Farmácia — Vila Assumpção (próx. Confiança)",
+      "categoria": "farmacia",
+      "lat": -22.8878,
+      "lng": -48.4448,
+      "detalhe": "Farmácia ao lado do Confiança Supermercados com fácil estacionamento."
+    },
+    {
+      "id": "farm-rubiao",
+      "nome": "Farmácia — Rubião Júnior (próx. HC UNESP)",
+      "categoria": "farmacia",
+      "lat": -22.8912,
+      "lng": -48.4910,
+      "detalhe": "Farmácia na região do Hospital das Clínicas e Rubião Júnior."
+    },
+
+    {
+      "id": "plantas-garden-centro",
+      "nome": "Floricultura & Garden — Centro (Amando de Barros)",
+      "categoria": "plantas",
+      "lat": -22.8846,
+      "lng": -48.4428,
+      "detalhe": "Plantas ornamentais, vasos, flores, substratos e insumos de jardinagem."
+    },
+    {
+      "id": "plantas-viveiro-alto",
+      "nome": "Viveiro de Mudas & Plantas — Bairro Alto / Vila Auxiliadora",
+      "categoria": "plantas",
+      "lat": -22.8895,
+      "lng": -48.4305,
+      "detalhe": "Mudas frutíferas, folhagens, terra vegetal e atendimento acolhedor perto da Casa Tata."
+    },
+    {
+      "id": "plantas-horto-paraiso",
+      "nome": "Horto & Garden Center — Jardim Paraíso / Lageado",
+      "categoria": "plantas",
+      "lat": -22.8585,
+      "lng": -48.4362,
+      "detalhe": "Amplo viveiro com flores, temperos, árvores frutíferas e jardinagem com estacionamento."
+    },
+    {
+      "id": "plantas-orquidario-lavradores",
+      "nome": "Orquidário & Floricultura — Vila dos Lavradores",
+      "categoria": "plantas",
+      "lat": -22.8758,
+      "lng": -48.4470,
+      "detalhe": "Orquídeas, suculentas, adubos naturais e arranjos de plantas."
+    },
+    {
+      "id": "plantas-viveiro-demetria",
+      "nome": "Viveiro & Plantas Orgânicas — Bairro Demétria",
+      "categoria": "plantas",
+      "lat": -22.9205,
+      "lng": -48.4648,
+      "detalhe": "Mudas orgânicas, ervas medicinais, flores e plantas nativas no Demétria."
+    },
+    {
+      "id": "plantas-jardim-botanico",
+      "nome": "Jardim Botânico UNESP — Coleção de Plantas",
+      "categoria": "plantas",
+      "lat": -22.8935,
+      "lng": -48.4975,
+      "detalhe": "Passeio tranquilo para quem ama botânica, espécies raras, bromélias e árvores nativas."
+    },
+
+    {
+      "id": "edu-unesp-rubiao",
+      "nome": "UNESP — Campus Rubião Júnior",
+      "categoria": "educacao",
+      "lat": -22.8908,
+      "lng": -48.4932,
+      "detalhe": "Faculdade de Medicina, Instituto de Biociências e Hospital das Clínicas."
+    },
+    {
+      "id": "edu-unesp-lageado",
+      "nome": "UNESP — Campus Fazenda Lageado",
+      "categoria": "educacao",
+      "lat": -22.8475,
+      "lng": -48.4272,
+      "detalhe": "Faculdade de Ciências Agronômicas e Medicina Veterinária e Zootecnia."
+    },
+    {
+      "id": "edu-lasalle",
+      "nome": "Colégio La Salle Botucatu",
+      "categoria": "educacao",
+      "lat": -22.8842,
+      "lng": -48.4422,
+      "detalhe": "Escola tradicional no Centro de Botucatu, próxima à Catedral."
+    },
+    {
+      "id": "edu-waldorf-demetria",
+      "nome": "Escola Waldorf Aitiara — Demétria",
+      "categoria": "educacao",
+      "lat": -22.9235,
+      "lng": -48.4682,
+      "detalhe": "Escola de pedagogia Waldorf no coração do Bairro Demétria."
+    }
+  ]
+}

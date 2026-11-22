@@ -1,0 +1,18 @@
+{
+  "name": "Botucatu Imóveis — Mapa & Entorno",
+  "short_name": "Botucatu Imóveis",
+  "description": "Encontre casas e chácaras em Botucatu e região vendo a distância até a Casa Tata, parques, áreas pet, academias e mercados.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f7f6f2",
+  "theme_color": "#1b5e43",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
