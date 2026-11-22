@@ -233,16 +233,12 @@ Regras:
     compareCount: document.getElementById("compareCount"),
     mobileCompareBtn: document.getElementById("mobileCompareBtn"),
     mobileCompareCount: document.getElementById("mobileCompareCount"),
-    jsonModalBtn: document.getElementById("jsonModalBtn"),
-    navJsonBtn: document.getElementById("navJsonBtn"),
     navListCount: document.getElementById("navListCount"),
     navSavedDot: document.getElementById("navSavedDot"),
     sortFilter: document.getElementById("sortFilter"),
     sheetSortSelect: document.getElementById("sheetSortSelect"),
     resultsCount: document.getElementById("resultsCount"),
     resetFiltersBtn: document.getElementById("resetFiltersBtn"),
-    previewBanner: document.getElementById("previewBanner"),
-    exitPreviewBtn: document.getElementById("exitPreviewBtn"),
     savedSubtitle: document.getElementById("savedSubtitle"),
     listingsContainer: document.getElementById("listingsContainer"),
     emptyState: document.getElementById("emptyState"),
@@ -272,17 +268,6 @@ Regras:
     sheetApplyFiltersBtn: document.getElementById("sheetApplyFiltersBtn"),
     compareModal: document.getElementById("compareModal"),
     compareBody: document.getElementById("compareBody"),
-    jsonModal: document.getElementById("jsonModal"),
-    jsonInput: document.getElementById("jsonInput"),
-    jsonError: document.getElementById("jsonError"),
-    applyJsonBtn: document.getElementById("applyJsonBtn"),
-    downloadJsonBtn: document.getElementById("downloadJsonBtn"),
-    loadSampleIntoEditorBtn: document.getElementById("loadSampleIntoEditorBtn"),
-    resetJsonBtn: document.getElementById("resetJsonBtn"),
-    currentJsonView: document.getElementById("currentJsonView"),
-    copyCurrentJsonBtn: document.getElementById("copyCurrentJsonBtn"),
-    grokbotPromptView: document.getElementById("grokbotPromptView"),
-    copyPromptBtn: document.getElementById("copyPromptBtn"),
     toast: document.getElementById("toast"),
   };
 
@@ -763,16 +748,8 @@ Regras:
     });
 
     const updatedLabel = formatDateShort(feed.atualizado_em);
-    const sourceLabel = feed.fonte || "JSON";
     const countLabel = `${state.houses.length} ${state.houses.length === 1 ? "imóvel" : "imóveis"}`;
-    el.feedStatus.classList.toggle("is-preview", isPreview);
-    el.feedStatusText.textContent = isPreview
-      ? `Prévia local · ${countLabel}`
-      : `${sourceLabel}${updatedLabel ? ` · ${updatedLabel}` : ""} · ${countLabel}`;
-
-    el.previewBanner.hidden = !isPreview;
-    el.resetJsonBtn.hidden = !isPreview;
-    el.currentJsonView.textContent = JSON.stringify(feed, null, 2);
+    el.feedStatusText.textContent = `${updatedLabel ? `Atualizado em ${updatedLabel} · ` : ""}${countLabel}`;
 
     updateSavedIndicators();
 
@@ -1991,7 +1968,7 @@ Regras:
         ${
           house.nota_grokbot
             ? `<div class="grokbot-box">
-                <div class="grokbot-box__label">✦ Análise do Grokbot</div>
+                <div class="grokbot-box__label">✦ Observações e destaques</div>
                 <p>${escapeHtml(house.nota_grokbot)}</p>
               </div>`
             : ""
@@ -2397,79 +2374,6 @@ Regras:
     if (m) m.hidden = true;
   }
 
-  function openJsonModal() {
-    el.jsonError.hidden = true;
-    if (!el.jsonInput.value.trim() && state.activeFeed) {
-      el.jsonInput.value = JSON.stringify(state.activeFeed, null, 2);
-    }
-    openModal("jsonModal");
-  }
-
-  function applyPastedJson() {
-    el.jsonError.hidden = true;
-    const raw = el.jsonInput.value.trim();
-    if (!raw) {
-      el.jsonError.textContent = "Cole um JSON válido antes de visualizar.";
-      el.jsonError.hidden = false;
-      return;
-    }
-
-    try {
-      const parsed = JSON.parse(raw);
-      const feed = Array.isArray(parsed)
-        ? { atualizado_em: new Date().toISOString(), fonte: "Grokbot", cidade: "Botucatu e região - SP", casas: parsed }
-        : parsed;
-
-      ingestFeed(feed, true);
-      try {
-        localStorage.setItem(STORAGE_KEYS.previewJson, JSON.stringify(feed));
-      } catch (_) {}
-      closeModal("jsonModal");
-      switchMobileTab("mapa");
-      showToast(`JSON aplicado! ${state.houses.length} imóveis no mapa.`);
-    } catch (err) {
-      el.jsonError.textContent = `Erro no JSON: ${err.message}`;
-      el.jsonError.hidden = false;
-    }
-  }
-
-  function downloadCurrentEditorJson() {
-    const raw = el.jsonInput.value.trim();
-    let dataToDownload = state.activeFeed;
-    if (raw) {
-      try {
-        const parsed = JSON.parse(raw);
-        dataToDownload = Array.isArray(parsed)
-          ? { atualizado_em: new Date().toISOString(), fonte: "Grokbot", cidade: "Botucatu e região - SP", casas: parsed }
-          : parsed;
-      } catch (err) {
-        el.jsonError.textContent = `Corrija o JSON antes de baixar: ${err.message}`;
-        el.jsonError.hidden = false;
-        return;
-      }
-    }
-    const blob = new Blob([JSON.stringify(dataToDownload, null, 2)], { type: "application/json" });
-    const url = URL.createObjectURL(blob);
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = "casas.json";
-    document.body.appendChild(a);
-    a.click();
-    a.remove();
-    URL.revokeObjectURL(url);
-    showToast("casas.json baixado! Suba em data/casas.json no GitHub.");
-  }
-
-  function exitPreviewMode() {
-    try {
-      localStorage.removeItem(STORAGE_KEYS.previewJson);
-    } catch (_) {}
-    if (state.publishedFeed) {
-      ingestFeed(state.publishedFeed, false);
-      showToast("Voltando para o JSON publicado.");
-    }
-  }
-
   function resetAllFilters() {
     state.filters = {
       query: "",
@@ -2500,7 +2404,6 @@ Regras:
     document.querySelectorAll("[data-nav-tab]").forEach((btn) => {
       btn.addEventListener("click", () => switchMobileTab(btn.dataset.navTab));
     });
-    el.navJsonBtn.addEventListener("click", openJsonModal);
 
     // Mobile saved sub-pills
     document.querySelectorAll("[data-saved-filter]").forEach((btn) => {
@@ -2657,54 +2560,6 @@ Regras:
     el.compareOpenBtn.addEventListener("click", openCompareModal);
     el.mobileCompareBtn.addEventListener("click", openCompareModal);
 
-    // JSON Grokbot modal
-    el.grokbotPromptView.textContent = GROKBOT_PROMPT;
-    el.jsonModalBtn.addEventListener("click", openJsonModal);
-    el.applyJsonBtn.addEventListener("click", applyPastedJson);
-    el.downloadJsonBtn.addEventListener("click", downloadCurrentEditorJson);
-    el.loadSampleIntoEditorBtn.addEventListener("click", () => {
-      if (state.activeFeed) {
-        el.jsonInput.value = JSON.stringify(state.activeFeed, null, 2);
-        el.jsonError.hidden = true;
-      }
-    });
-    el.resetJsonBtn.addEventListener("click", () => {
-      exitPreviewMode();
-      closeModal("jsonModal");
-    });
-    el.exitPreviewBtn.addEventListener("click", exitPreviewMode);
-
-    el.copyCurrentJsonBtn.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(JSON.stringify(state.activeFeed, null, 2));
-        showToast("JSON copiado!");
-      } catch (_) {
-        showToast("Selecione e copie o texto acima.");
-      }
-    });
-    el.copyPromptBtn.addEventListener("click", async () => {
-      try {
-        await navigator.clipboard.writeText(GROKBOT_PROMPT);
-        showToast("Prompt do Grokbot copiado!");
-      } catch (_) {
-        showToast("Selecione e copie o prompt acima.");
-      }
-    });
-
-    // Modal tabs & close
-    document.querySelectorAll(".tab-btn").forEach((btn) => {
-      btn.addEventListener("click", () => {
-        const target = btn.dataset.tab;
-        document.querySelectorAll(".tab-btn").forEach((b) => {
-          b.classList.toggle("is-active", b === btn);
-          b.setAttribute("aria-selected", String(b === btn));
-        });
-        document.querySelectorAll(".tab-panel").forEach((p) => {
-          p.classList.toggle("is-active", p.dataset.panel === target);
-        });
-      });
-    });
-
     document.querySelectorAll("[data-close-modal]").forEach((btn) => {
       btn.addEventListener("click", () => closeModal(btn.dataset.closeModal));
     });
@@ -2715,7 +2570,6 @@ Regras:
     });
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
-        closeModal("jsonModal");
         closeModal("compareModal");
         closeModal("filtersModal");
         if (state.drawerOpen) closeDrawer(isDesktop());
@@ -2751,20 +2605,7 @@ Regras:
       state.publishedFeed = await casasResp.json();
 
       initMap();
-
-      let restoredPreview = null;
-      if (!externalJsonUrl) {
-        try {
-          const saved = localStorage.getItem(STORAGE_KEYS.previewJson);
-          if (saved) restoredPreview = JSON.parse(saved);
-        } catch (_) {}
-      }
-
-      if (restoredPreview && Array.isArray(restoredPreview.casas)) {
-        ingestFeed(restoredPreview, true);
-      } else {
-        ingestFeed(state.publishedFeed, false);
-      }
+      ingestFeed(state.publishedFeed, false);
     } catch (err) {
       console.error(err);
       el.feedStatusText.textContent = "Erro ao carregar JSON";
