@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-22T18:44:01-03:00",
+  "atualizado_em": "2026-11-22T19:05:36-03:00",
   "fonte": "Grokbot",
   "cidade": "Botucatu e região - SP",
   "observacao": "Lista atual da busca de aluguel em Botucatu e cidades a até 50 km por estrada (São Manuel ~25 km, Pardinho ~28 km, Itatinga ~37 km, Pratânia ~37 km, Areiópolis ~37 km, Bofete ~44 km). Critérios: até R$ 3.500 (comentar acima de R$ 3.000), 2 quartos + edícula ou 3 quartos, terreno 200 m²+, quintal (leniente), garagem (senão 'confirmar garagem'), 2+ banheiros, térrea preferida, sobrado só com quarto no térreo, chácara residencial ok. Sem a região da Mina. Avaré (~76 km), Lençóis Paulista (~54 km) e Anhembi (~51 km) ficam fora do raio. Fora de Botucatu, o anúncio traz cidade e distância. O link principal é o do site da imobiliária, quando existe.",
@@ -912,6 +912,47 @@
       "encontrado_em": "2026-11-09"
     },
     {
+      "id": "re-max-rede-mais-630481137-39",
+      "titulo": "Casa térrea 3 quartos — Chácara Montagna (Jardim Paraíso)",
+      "finalidade": "aluguel",
+      "tipo": "Casa térrea",
+      "preco": 2800,
+      "condominio": null,
+      "iptu": null,
+      "bairro": "Chácara Montagna (Jardim Paraíso)",
+      "cidade": "Botucatu",
+      "lat": -22.8858,
+      "lng": -48.445,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 3,
+      "vagas": 2,
+      "area_m2": null,
+      "terreno_m2": 250,
+      "quintal": true,
+      "chacara": false,
+      "destaque": false,
+      "reservada": false,
+      "descricao": "NOVA 22/11 ~19h (portais Casa Mineira/DreamCasa, cód. RE/MAX 630481137-39, CM posting 3023498087, CA5594344-FR): R$2.800, 3q (1 suíte)/3b, 2 vagas cobertas, 250 m² tot=útil, IPTU R$759. Rua Nelo Pedretti (anúncio: Pedreti), ao lado do hospital do bairro. Fotos (imovelwebcdn, marca d'água RE/MAX): casa térrea com garagem coberta para 2 carros; jardim/sebe na frente; corredores laterais cimentados/l",
+      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 22/11 ~19h (portais Casa Mineira/DreamCasa, cód. RE/MAX 630481137-39, CM posting 3023498087, CA5594344-FR): R$2.800, 3q (1 suíte)/3b, 2 vagas cobertas, 250 m² tot=útil, IPTU R$759. Rua Nelo Pedretti (anúncio: Pedreti), ao lado do hospital do bairro. Fotos (imovelwebcdn, marca d'água RE/MAX): casa térrea com garagem coberta para 2 carros; jardim/sebe na frente; corredores laterais cimentados/lajota. Confirmar se os 250 m² são de terreno (anúncio iguala total e útil) e o quintal (só trecho gramado na frente). Também aparece em: https://www.casamineira.com.br/imovel/casa-aluguel-botucatu-chacara-montagna-3-quartos-3023498087.html",
+      "tags": [
+        "Térrea"
+      ],
+      "fotos": [
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803146496.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803154211.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803167691.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803137269.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803136090.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803159000.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803167098.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/23/49/80/87/1200x1200/5803182181.jpg"
+      ],
+      "link": "https://www.remax.com.br/pt-br/imoveis/casa/alugar/botucatu/630481137-39",
+      "portal": "RE/MAX Rede Mais",
+      "encontrado_em": "2026-11-22"
+    },
+    {
       "id": "phenix-505",
       "titulo": "Casa térrea 4 quartos — Jardim Paraíso",
       "finalidade": "aluguel",
@@ -1116,6 +1157,85 @@
       "encontrado_em": "2026-11-05"
     },
     {
+      "id": "particular-olx-casa-4-quartos-jardim-paraiso-1550835680",
+      "titulo": "Casa térrea 4 quartos — Jardim Paraíso (nº 667)",
+      "finalidade": "aluguel",
+      "tipo": "Casa térrea",
+      "preco": 3000,
+      "condominio": null,
+      "iptu": null,
+      "bairro": "Jardim Paraíso (nº 667)",
+      "cidade": "Botucatu",
+      "lat": -22.8648,
+      "lng": -48.4425,
+      "quartos": 4,
+      "suites": 0,
+      "banheiros": 3,
+      "vagas": 4,
+      "area_m2": null,
+      "terreno_m2": null,
+      "quintal": true,
+      "chacara": false,
+      "destaque": false,
+      "reservada": false,
+      "descricao": "NOVA 22/11 ~19h OLX (proprietário): R$3.000, 4q + quarto de serviço/3b/4 vagas, 200 m², churrasqueira, portão eletrônico. Fotos: casa térrea nº 667, telhado de barro, portão de garagem preto, vasos/sebe na calçada; garagem e corredor lateral lajotados; um cômodo interno. Confirmar se 200 m² são de terreno (no limite) e o quintal (só vegetação em floreiras na frente; laterais cimentadas).",
+      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 22/11 ~19h OLX (proprietário): R$3.000, 4q + quarto de serviço/3b/4 vagas, 200 m², churrasqueira, portão eletrônico. Fotos: casa térrea nº 667, telhado de barro, portão de garagem preto, vasos/sebe na calçada; garagem e corredor lateral lajotados; um cômodo interno. Confirmar se 200 m² são de terreno (no limite) e o quintal (só vegetação em floreiras na frente; laterais cimentadas).",
+      "tags": [
+        "Térrea"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/73/736656108565854.jpg",
+        "https://img.olx.com.br/images/75/756618940821469.jpg",
+        "https://img.olx.com.br/images/76/768625463829192.jpg",
+        "https://img.olx.com.br/images/77/778637703630562.jpg",
+        "https://img.olx.com.br/images/78/786698704798865.jpg"
+      ],
+      "link": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/imoveis/casa-4-quartos-jardim-paraiso-1550835680",
+      "portal": "Particular (OLX)",
+      "encontrado_em": "2026-11-22",
+      "aceita_pets": true
+    },
+    {
+      "id": "particular-olx-casa-j-paraiso-3-quartos-1518606497",
+      "titulo": "Sobrado 3 quartos — Jardim Paraíso",
+      "finalidade": "aluguel",
+      "tipo": "Sobrado",
+      "preco": 3000,
+      "condominio": null,
+      "iptu": null,
+      "bairro": "Jardim Paraíso",
+      "cidade": "Botucatu",
+      "lat": -22.8648,
+      "lng": -48.4425,
+      "quartos": 3,
+      "suites": 0,
+      "banheiros": 3,
+      "vagas": 2,
+      "area_m2": null,
+      "terreno_m2": null,
+      "quintal": true,
+      "chacara": false,
+      "destaque": false,
+      "reservada": false,
+      "descricao": "NOVA 22/11 ~19h OLX (proprietário): R$3.000 (de R$3.300), 3q/3b/2 vagas, 180 m², edícula com quarto e banheiro, churrasqueira, cerca/portão/porteiro eletrônico. Fotos: fachada térrea com 2 portões de garagem + pedestre; por dentro há escada para o piso de cima (é sobrado); corredor lateral todo lajotado. O quarto da edícula (texto) poderia ser o quarto no térreo, mas não aparece nas 5 fotos. Confi",
+      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 22/11 ~19h OLX (proprietário): R$3.000 (de R$3.300), 3q/3b/2 vagas, 180 m², edícula com quarto e banheiro, churrasqueira, cerca/portão/porteiro eletrônico. Fotos: fachada térrea com 2 portões de garagem + pedestre; por dentro há escada para o piso de cima (é sobrado); corredor lateral todo lajotado. O quarto da edícula (texto) poderia ser o quarto no térreo, mas não aparece nas 5 fotos. Confirmar edícula/quarto no térreo, se 180 m² são de terreno (<200?) e o quintal.",
+      "tags": [
+        "Sobrado",
+        "Quarto no térreo"
+      ],
+      "fotos": [
+        "https://img.olx.com.br/images/94/945696329479789.jpg",
+        "https://img.olx.com.br/images/96/964630686191781.jpg",
+        "https://img.olx.com.br/images/72/722613687739853.jpg",
+        "https://img.olx.com.br/images/73/732682442005539.jpg",
+        "https://img.olx.com.br/images/74/748691685842584.jpg"
+      ],
+      "link": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/imoveis/casa-j-paraiso-3-quartos-1518606497",
+      "portal": "Particular (OLX)",
+      "encontrado_em": "2026-11-22",
+      "aceita_pets": true
+    },
+    {
       "id": "habites-4971",
       "titulo": "Casa térrea 3 quartos — Jardim Paraíso (Av. Universitária, nº 2576)",
       "finalidade": "aluguel",
@@ -1138,7 +1258,7 @@
       "destaque": false,
       "reservada": false,
       "descricao": "reaberta 03/11 19h: 3q (1 suíte)/2b, terreno 250 m², 160 m² constr.; = Molina 2045 (diz edícula) e RE/MAX Invest 630111007-1851/CNM 48031498 (mesmas fotos); quintal todo revestido",
-      "nota_grokbot": "Classificação da busca: provável. reaberta 03/11 19h: 3q (1 suíte)/2b, terreno 250 m², 160 m² constr.; = Molina 2045 (diz edícula) e RE/MAX Invest 630111007-1851/CNM 48031498 (mesmas fotos); quintal todo revestido Térrea; rampa com corrimão na entrada.",
+      "nota_grokbot": "Classificação da busca: provável. reaberta 03/11 19h: 3q (1 suíte)/2b, terreno 250 m², 160 m² constr.; = Molina 2045 (diz edícula) e RE/MAX Invest 630111007-1851/CNM 48031498 (mesmas fotos); quintal todo revestido Térrea; rampa com corrimão na entrada. Também aparece em: https://sp.olx.com.br/regiao-de-bauru-e-marilia/imoveis/casa-para-locacao-jardim-paraiso-1545212024",
       "tags": [
         "Acima de R$ 3.000",
         "Térrea"
@@ -1265,7 +1385,7 @@
       "destaque": false,
       "reservada": false,
       "descricao": "reaberta 03/11 19h: 3q (1 suíte)/2b, terreno 250 m² (10x25), 220 m² constr. (sobra pouco quintal), 2 cozinhas, despensa; só fotos internas (mobiliada?)",
-      "nota_grokbot": "Classificação da busca: a confirmar. reaberta 03/11 19h: 3q (1 suíte)/2b, terreno 250 m² (10x25), 220 m² constr. (sobra pouco quintal), 2 cozinhas, despensa; só fotos internas (mobiliada?) Sem fotos externas.",
+      "nota_grokbot": "Classificação da busca: a confirmar. reaberta 03/11 19h: 3q (1 suíte)/2b, terreno 250 m² (10x25), 220 m² constr. (sobra pouco quintal), 2 cozinhas, despensa; só fotos internas (mobiliada?) Sem fotos externas. Também aparece em: https://sp.olx.com.br/regiao-de-bauru-e-marilia/imoveis/locacao-de-casas-padrao-na-cidade-de-botucatu-1546121465",
       "tags": [
         "Acima de R$ 3.000"
       ],
@@ -1498,6 +1618,49 @@
       "link": "https://robuste.com.br/imovel/locacao/casas/botucatu/jardim-paraiso/7140",
       "portal": "Robuste Negócios Imobiliários",
       "encontrado_em": "2026-11-18"
+    },
+    {
+      "id": "re-max-rede-mais-630481082-261",
+      "titulo": "Casa térrea 3 quartos — Villas Paraíso (Rua Ana de Lourdes Padovani)",
+      "finalidade": "aluguel",
+      "tipo": "Casa térrea",
+      "preco": 3500,
+      "condominio": null,
+      "iptu": null,
+      "bairro": "Villas Paraíso (Rua Ana de Lourdes Padovani)",
+      "cidade": "Botucatu",
+      "lat": -22.8858,
+      "lng": -48.445,
+      "quartos": 3,
+      "suites": 1,
+      "banheiros": 2,
+      "vagas": 2,
+      "area_m2": 200,
+      "terreno_m2": 280,
+      "quintal": true,
+      "chacara": false,
+      "destaque": false,
+      "reservada": false,
+      "descricao": "NOVA 22/11 ~19h (Casa Mineira/DreamCasa/CNM 40024619, cód. RE/MAX 630481082-261, CA5266860-FR, CM1776377-3): R$3.500 (no teto, comentar), 3q (1 suíte)/2b + lavabo, 280 m² tot / 200 m² útil, 2 vagas descobertas. Título do portal diz Centro / Praça João Ribeiro; descrição: Rua Ana de Lourdes Padovani, Vila/Villas Paraíso. Fotos (marca d'água RE/MAX): casa térrea moderna, faixa de grama na frente e q",
+      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 22/11 ~19h (Casa Mineira/DreamCasa/CNM 40024619, cód. RE/MAX 630481082-261, CA5266860-FR, CM1776377-3): R$3.500 (no teto, comentar), 3q (1 suíte)/2b + lavabo, 280 m² tot / 200 m² útil, 2 vagas descobertas. Título do portal diz Centro / Praça João Ribeiro; descrição: Rua Ana de Lourdes Padovani, Vila/Villas Paraíso. Fotos (marca d'água RE/MAX): casa térrea moderna, faixa de grama na frente e quintal gramado nos fundos (também um canteiro elevado de grama); pátio dianteiro todo cimentado para os carros. Confirmar garagem (vagas descobertas) e o endereço certo. Também aparece em: https://www.chavesnamao.com.br/imovel/casa-para-alugar-3-quartos-sp-botucatu-villas-paraiso-280m2-RS3500/id-40024619/",
+      "tags": [
+        "Acima de R$ 3.000",
+        "Térrea",
+        "Confirmar garagem"
+      ],
+      "fotos": [
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575245292.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575245299.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575250718.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575245468.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575245466.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575245665.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575245672.jpg",
+        "https://imgbr.imovelwebcdn.com/avisos/resize/22/30/14/95/24/86/1200x1200/5575267860.jpg"
+      ],
+      "link": "https://www.remax.com.br/pt-br/imoveis/casa/alugar/botucatu/630481082-261",
+      "portal": "RE/MAX Rede Mais",
+      "encontrado_em": "2026-11-22"
     }
   ]
 }
