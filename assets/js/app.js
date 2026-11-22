@@ -708,6 +708,8 @@ Regras:
           : "aluguel";
       const coords = resolveHouseCoords(raw, i);
       const id = String(raw.id || `imovel-${i + 1}-${hashString(raw.titulo || String(i))}`);
+      const isFotoUrl = (s) =>
+        /^https?:\/\//i.test(s) || /^(?:\.\/)?assets\//i.test(s);
       const rawFotos = Array.isArray(raw.fotos)
         ? raw.fotos
         : typeof raw.foto === "string"
@@ -718,7 +720,7 @@ Regras:
       const fotosClean = [
         ...new Set(
           rawFotos
-            .filter((u) => typeof u === "string" && /^https?:\/\//i.test(u.trim()))
+            .filter((u) => typeof u === "string" && isFotoUrl(u.trim()))
             .map((u) => u.trim())
         ),
       ];
