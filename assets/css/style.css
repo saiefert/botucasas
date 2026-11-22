@@ -48,9 +48,12 @@
 }
 
 html, body {
+  width: 100%;
+  max-width: 100%;
   height: 100%;
   height: 100dvh;
   margin: 0;
+  overflow: hidden;
   overscroll-behavior: none;
 }
 
@@ -285,12 +288,12 @@ body[data-tab="lista"] .filter-fab {
   flex: 1;
   min-height: 0;
   width: 100%;
-  height: 100%;
+  overflow: hidden;
 }
 
 .map-stage {
   position: absolute;
-  inset: 0 0 var(--bottom-nav-h) 0;
+  inset: 0;
   background: #e9eee9;
   z-index: 5;
   transition: opacity 0.18s ease;
@@ -535,6 +538,8 @@ body[data-tab="salvas"] .map-stage {
   overflow: hidden;
 }
 .peek-near {
+  flex: none;
+  white-space: nowrap;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -559,12 +564,15 @@ body[data-tab="salvas"] .map-stage {
 /* ============ SIDEBAR (LISTA & SALVAS TABS ON MOBILE) ============ */
 .sidebar {
   position: absolute;
-  inset: 0 0 var(--bottom-nav-h) 0;
+  inset: 0;
   z-index: 10;
   background: var(--bg);
   display: flex;
   flex-direction: column;
   min-height: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.16s ease;
@@ -646,9 +654,11 @@ body[data-tab="salvas"] .saved-head { display: flex; }
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+  min-width: 0;
 }
 
 .segmented {
+  flex: none;
   display: inline-flex;
   background: var(--bg);
   border: 1px solid var(--border);
@@ -672,6 +682,9 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 }
 
 .select-pill {
+  flex: 1;
+  min-width: 0;
+  max-width: 100%;
   height: 34px;
   border-radius: var(--radius-pill);
   border: 1px solid var(--border);
@@ -680,6 +693,7 @@ body[data-tab="salvas"] .saved-head { display: flex; }
   font-size: 12.5px;
   font-weight: 600;
   color: var(--ink);
+  text-overflow: ellipsis;
   appearance: none;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M3 4.5L6 7.5L9 4.5' fill='none' stroke='%23566860' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -765,6 +779,8 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 }
 
 .house-card {
+  flex: none;
+  flex-shrink: 0;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 18px;
@@ -1515,14 +1531,13 @@ body[data-tab="salvas"] .saved-head { display: flex; }
 
 /* ============ NATIVE-STYLE BOTTOM NAVIGATION BAR ============ */
 .bottom-nav {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  position: relative;
+  flex: none;
+  width: 100%;
   height: var(--bottom-nav-h);
   padding-bottom: var(--safe-bottom);
   z-index: 40;
-  background: rgba(255, 255, 255, 0.96);
+  background: rgba(255, 255, 255, 0.98);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-top: 1px solid var(--border);
@@ -2122,7 +2137,7 @@ body[data-tab="salvas"] .saved-head { display: flex; }
   }
 
   .map-hint {
-    display: block;
+    display: none;
     position: absolute;
     bottom: 18px;
     right: 16px;
@@ -2135,6 +2150,9 @@ body[data-tab="salvas"] .saved-head { display: flex; }
     border-radius: var(--radius-pill);
     pointer-events: none;
     transition: opacity 0.25s;
+  }
+  @media (min-width: 1380px) {
+    .map-hint { display: block; }
   }
   .map-hint.is-hidden { opacity: 0; }
 
