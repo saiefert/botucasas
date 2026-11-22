@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-22T17:54:27-03:00",
+  "atualizado_em": "2026-11-22T17:58:20-03:00",
   "fonte": "Grokbot",
   "cidade": "Botucatu e região - SP",
   "observacao": "Lista atual da busca de aluguel em Botucatu e cidades a até 50 km por estrada (São Manuel ~25 km, Pardinho ~28 km, Itatinga ~37 km, Pratânia ~37 km, Areiópolis ~37 km, Bofete ~44 km). Critérios: até R$ 3.500 (comentar acima de R$ 3.000), 2 quartos + edícula ou 3 quartos, terreno 200 m²+, quintal (leniente), garagem (senão 'confirmar garagem'), 2+ banheiros, térrea preferida, sobrado só com quarto no térreo, chácara residencial ok. Sem a região da Mina. Avaré (~76 km), Lençóis Paulista (~54 km) e Anhembi (~51 km) ficam fora do raio. Fora de Botucatu, o anúncio traz cidade e distância. O link principal é o do site da imobiliária, quando existe.",
@@ -531,7 +531,16 @@
         "Térrea",
         "Chácara residencial"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_f1c74602-e835-4be2-8ecd-5c1023520907.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_638fdd08-dc07-416f-baec-7d0282a32b32.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_26497c4e-f5f1-450e-b9ba-06fe202867c1.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_d664ab2f-ae11-4b3a-ac15-0edcd573e616.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_70d6ade4-034f-4fed-a015-faa5b1db88ad.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_01ec7ff2-cb7f-41bc-ad66-2d3432c15502.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_366258e9-52ba-445b-a21a-79f1000a0274.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_42ae86e1-f9e4-4b47-9c98-b00f5027842a.jpg"
+      ],
       "link": "https://www.remax.com.br/en/listings/house/for-rent/lease/botucatu/630481155-34",
       "portal": "RE/MAX Rede Mais",
       "encontrado_em": "2026-11-03"
@@ -986,39 +995,6 @@
       "moveis": true
     },
     {
-      "id": "fbmkt-2239168283498255",
-      "titulo": "Casa 2 quartos — Jardim Dona Nicota de Barros",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "preco": 2900,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Jardim Dona Nicota de Barros",
-      "cidade": "Botucatu",
-      "lat": -22.8858,
-      "lng": -48.445,
-      "quartos": 2,
-      "suites": 0,
-      "banheiros": 2,
-      "vagas": 4,
-      "area_m2": null,
-      "terreno_m2": null,
-      "quintal": true,
-      "chacara": false,
-      "destaque": false,
-      "reservada": false,
-      "descricao": "NOVA 22/11 Marketplace (fbmkt-2239168283498255): 2q/2b, 2 salas, escritório, área de churrasco, lavanderia, 3º quarto/sala de jogos opcional (não é edícula clara — confirmar se conta como 3q ou 2q+edícula), garagem 4 carros, aceita cão/gato. Térrea, quintal e terreno não informados (a confirmar). Anunciante: Battaglia Assessoria Imobiliária (não achei site oficial da agência em Botucatu; o link pr",
-      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 22/11 Marketplace (fbmkt-2239168283498255): 2q/2b, 2 salas, escritório, área de churrasco, lavanderia, 3º quarto/sala de jogos opcional (não é edícula clara — confirmar se conta como 3q ou 2q+edícula), garagem 4 carros, aceita cão/gato. Térrea, quintal e terreno não informados (a confirmar). Anunciante: Battaglia Assessoria Imobiliária (não achei site oficial da agência em Botucatu; o link principal fica o Marketplace). Possível sobreposição com a Concreto 114764 (sobrado 2q/2b, 4 vagas, Rua Veiga Russo, R$2.800, já fora da lista por ser sobrado sem evidência de quarto no térreo) — confirmar se é a mesma casa.",
-      "tags": [
-        "Visto no Facebook Marketplace"
-      ],
-      "fotos": [],
-      "link": "https://www.facebook.com/marketplace/item/2239168283498255/",
-      "portal": "Battaglia Assessoria Imobiliária",
-      "encontrado_em": "2026-11-22",
-      "aceita_pets": true
-    },
-    {
       "id": "garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo",
       "titulo": "Casa térrea 3 quartos — Jardim Continental",
       "finalidade": "aluguel",
@@ -1142,39 +1118,6 @@
       "encontrado_em": "2026-11-05"
     },
     {
-      "id": "fbmkt-1370816484911236",
-      "titulo": "Casa 3 quartos — Vila Guimarães",
-      "finalidade": "aluguel",
-      "tipo": "Casa",
-      "preco": 3000,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Vila Guimarães",
-      "cidade": "Botucatu",
-      "lat": -22.8858,
-      "lng": -48.445,
-      "quartos": 3,
-      "suites": 1,
-      "banheiros": 3,
-      "vagas": 3,
-      "area_m2": null,
-      "terreno_m2": 150,
-      "quintal": true,
-      "chacara": false,
-      "destaque": false,
-      "reservada": false,
-      "descricao": "NOVA 22/11 Marketplace (fbmkt-1370816484911236): 3q (1 suíte), 2 ou 3 banheiros (conflito no anúncio), garagem 2-3 carros, lavanderia, aceita cão/gato, pin na SP-254. Térrea, quintal, edícula e terreno não informados (a confirmar). Se for sobrado, só vale com quarto claro no térreo. Anunciante: Battaglia (sem site oficial localizado; link principal = Marketplace). Possível sobreposição com a Mbrok",
-      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 22/11 Marketplace (fbmkt-1370816484911236): 3q (1 suíte), 2 ou 3 banheiros (conflito no anúncio), garagem 2-3 carros, lavanderia, aceita cão/gato, pin na SP-254. Térrea, quintal, edícula e terreno não informados (a confirmar). Se for sobrado, só vale com quarto claro no térreo. Anunciante: Battaglia (sem site oficial localizado; link principal = Marketplace). Possível sobreposição com a Mbrokers 96463 (sobrado 3q/2b R$3.000, terreno 150 m², já fora) ou com o anúncio do ZAP na Rua Antônio Bernardo — confirmar.",
-      "tags": [
-        "Visto no Facebook Marketplace"
-      ],
-      "fotos": [],
-      "link": "https://www.facebook.com/marketplace/item/1370816484911236/",
-      "portal": "Battaglia Assessoria Imobiliária",
-      "encontrado_em": "2026-11-22",
-      "aceita_pets": true
-    },
-    {
       "id": "habites-4971",
       "titulo": "Casa térrea 3 quartos — Jardim Paraíso (Av. Universitária, nº 2576)",
       "finalidade": "aluguel",
@@ -1243,7 +1186,16 @@
       "tags": [
         "Acima de R$ 3.000"
       ],
-      "fotos": [],
+      "fotos": [
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_571a46ce-d72c-466f-a2b9-cac537bf8432.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_757f848b-a3a6-47fb-8a81-68638ca9d201.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_fd9f3e6c-1a1f-47ba-8ca3-a7d47c4685a1.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_70c4f3aa-9884-4714-98c1-3bcdd7151cf6.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_e0ff0343-d2ab-4845-bf5a-ac1bd1077d74.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_670e5527-55cd-4098-bbb5-56e9ee56addb.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_f5c34d0a-1974-4818-9b81-6ba46ff7e185.jpg",
+        "https://cdn.gryphtech.com/userimages/63/LargeWM/L_89d78b20-0f98-45bb-8d30-2664b33fd076.jpg"
+      ],
       "link": "https://www.remax.com.br/en/listings/house/for-rent/lease/botucatu/866-rua-doutor-miguel-alvarenga/630481154-23",
       "portal": "RE/MAX Rede Mais",
       "encontrado_em": "2026-11-03",
