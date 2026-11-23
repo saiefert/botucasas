@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T00:31:26-03:00",
+  "atualizado_em": "2026-11-23T09:06:10-03:00",
   "fonte": "Grokbot",
   "cidade": "Botucatu e região - SP",
   "observacao": "Lista atual da busca de aluguel em Botucatu e cidades a até 50 km por estrada (São Manuel ~25 km, Pardinho ~28 km, Itatinga ~37 km, Pratânia ~37 km, Areiópolis ~37 km, Bofete ~44 km). Critérios: até R$ 3.500 (comentar acima de R$ 3.000), 2 quartos + edícula ou 3 quartos, terreno 200 m²+, quintal (leniente), garagem (senão 'confirmar garagem'), 2+ banheiros, térrea preferida, sobrado só com quarto no térreo, chácara residencial ok. Sem a região da Mina. Avaré (~76 km), Lençóis Paulista (~54 km) e Anhembi (~51 km) ficam fora do raio. Fora de Botucatu, o anúncio traz cidade e distância. O link principal é o do site da imobiliária, quando existe.",
@@ -753,47 +753,6 @@
       "encontrado_em": "2026-11-09"
     },
     {
-      "id": "alternativa-casas-para-alugar-300",
-      "titulo": "Sobrado 3 quartos — Centro",
-      "finalidade": "aluguel",
-      "tipo": "Sobrado",
-      "preco": 2700,
-      "condominio": null,
-      "iptu": null,
-      "bairro": "Centro",
-      "cidade": "Botucatu",
-      "lat": -22.886329,
-      "lng": -48.445291,
-      "quartos": 3,
-      "suites": 0,
-      "banheiros": null,
-      "vagas": 4,
-      "area_m2": null,
-      "terreno_m2": null,
-      "quintal": true,
-      "chacara": false,
-      "destaque": false,
-      "reservada": false,
-      "descricao": "SOBRADO com quarto no térreo (edícula c/ dormitório, texto do anúncio). Centro R$2.700; 3 dorm. superiores + edícula; banheiro na casa + banheiro na edícula (≥2); garagem 4 vagas; terreno não informado (confirmar ≥200); quintal/animais a confirmar.",
-      "nota_grokbot": "Classificação da busca: a confirmar. SOBRADO com quarto no térreo (edícula c/ dormitório, texto do anúncio). Centro R$2.700; 3 dorm. superiores + edícula; banheiro na casa + banheiro na edícula (≥2); garagem 4 vagas; terreno não informado (confirmar ≥200); quintal/animais a confirmar. 06/11 9h: texto do anúncio: \"3 dormitórios (parte superior)\" + \"edícula com dormitório e banheiro\" → quarto no térreo na edícula (evidência textual). Fotos confirmam sobrado de 2 pavimentos.",
-      "tags": [
-        "Sobrado"
-      ],
-      "fotos": [
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6162.jpeg",
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6163.jpeg",
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6164.jpeg",
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6165.jpeg",
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6166.jpeg",
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6167.jpeg",
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6168.jpeg",
-        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6169.jpeg"
-      ],
-      "link": "https://alternativaimoveisbotucatu.com.br/imoveis-para-alugar/casas-para-alugar-300/",
-      "portal": "Alternativa Imóveis",
-      "encontrado_em": "2026-11-06"
-    },
-    {
       "id": "acessa-CA0422-ACEW",
       "titulo": "Casa térrea 3 quartos — Vila Carmelo",
       "finalidade": "aluguel",
@@ -1075,6 +1034,47 @@
       "link": "https://neisaimobiliaria.com.br/alugar/sp/botucatu/conjunto-residencial-jardim-do-mirante/casa/9642064",
       "portal": "Neisa Imobiliária",
       "encontrado_em": "2026-10-30"
+    },
+    {
+      "id": "alternativa-casas-para-alugar-300",
+      "titulo": "Sobrado 3 quartos — Centro",
+      "finalidade": "aluguel",
+      "tipo": "Sobrado",
+      "preco": 3000,
+      "condominio": null,
+      "iptu": null,
+      "bairro": "Centro",
+      "cidade": "Botucatu",
+      "lat": -22.886329,
+      "lng": -48.445291,
+      "quartos": 3,
+      "suites": 0,
+      "banheiros": null,
+      "vagas": 4,
+      "area_m2": null,
+      "terreno_m2": null,
+      "quintal": true,
+      "chacara": false,
+      "destaque": false,
+      "reservada": false,
+      "descricao": "SOBRADO com quarto no térreo (edícula c/ dormitório, texto do anúncio). Centro R$2.700; 3 dorm. superiores + edícula; banheiro na casa + banheiro na edícula (≥2); garagem 4 vagas; terreno não informado (confirmar ≥200); quintal/animais a confirmar.",
+      "nota_grokbot": "Classificação da busca: a confirmar. SOBRADO com quarto no térreo (edícula c/ dormitório, texto do anúncio). Centro R$2.700; 3 dorm. superiores + edícula; banheiro na casa + banheiro na edícula (≥2); garagem 4 vagas; terreno não informado (confirmar ≥200); quintal/animais a confirmar. 06/11 9h: texto do anúncio: \"3 dormitórios (parte superior)\" + \"edícula com dormitório e banheiro\" → quarto no térreo na edícula (evidência textual). Fotos confirmam sobrado de 2 pavimentos.",
+      "tags": [
+        "Sobrado"
+      ],
+      "fotos": [
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6162.jpeg",
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6163.jpeg",
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6164.jpeg",
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6165.jpeg",
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6166.jpeg",
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6167.jpeg",
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6168.jpeg",
+        "https://alternativaimoveisbotucatu.com.br/wp-content/uploads/2026/10/6169.jpeg"
+      ],
+      "link": "https://alternativaimoveisbotucatu.com.br/imoveis-para-alugar/casas-para-alugar-300/",
+      "portal": "Alternativa Imóveis",
+      "encontrado_em": "2026-11-06"
     },
     {
       "id": "ideal-casa-vila-padovan-botucatu-sp-723",
