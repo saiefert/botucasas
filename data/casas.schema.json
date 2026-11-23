@@ -88,6 +88,11 @@
           },
           "aceita_pets": { "type": "boolean", "default": true },
           "quintal": { "type": "boolean", "default": false },
+          "nova": {
+            "type": "boolean",
+            "default": false,
+            "description": "Indica se o imóvel é uma novidade recém-adicionada na atualização (true = exibe estrelinha e selo Nova no mapa ao lado do valor e nos cards, false = imóvel já listado anteriormente)."
+          },
           "destaque": { "type": "boolean", "default": false },
           "descricao": {
             "type": "string",

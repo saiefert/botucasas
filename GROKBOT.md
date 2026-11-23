@@ -37,6 +37,7 @@ Sempre que encontrar imóveis relevantes, retorne APENAS um JSON válido seguind
       "chacara": true,
       "aceita_pets": true,
       "quintal": true,
+      "nova": true,
       "destaque": false,
       "descricao": "Resumo objetivo do imóvel.",
       "nota_grokbot": "Por que este imóvel vale a pena e pontos de atenção.",
@@ -53,11 +54,12 @@ Regras:
 1. "finalidade" deve ser "aluguel" ou "compra".
 2. "preco", "condominio", "iptu", "area_m2", "terreno_m2" devem ser números (sem "R$").
 3. "chacara" deve ser booleano (true quando o imóvel for chácara / sítio / propriedade rural de lazer, false quando for casa/apartamento urbano comum).
-4. Mantenha "id" estável para o mesmo imóvel entre atualizações (assim o usuário não perde favoritos nem anotações).
-5. Sempre tente preencher "lat" e "lng" reais em Botucatu e região (em torno de -22.88, -48.44). Se não tiver certeza exata, preencha "bairro" ou cidade vizinha (ex: "Alto", "Jardim Paraíso", "Demétria", "Rubião Júnior", "Vitoriana", "Pardinho", "Itatinga", "São Manuel") que o site posiciona automaticamente.
-6. Extraia as URLs diretas (`https://...`) das fotos reais do anúncio e coloque em `"fotos": ["https://...", "https://..."]` (até 6–8 fotos principais). O site carrega com `referrerpolicy="no-referrer"` e faz fallback automático caso algum link expire.
-7. A distância até a Casa Tata (Rua Delfim da Graça Cardoso, 1197, Alto, Botucatu - SP, 18601-542) e até parques, áreas pet, academias, mercados, cafés, saúde e educação é calculada automaticamente pelo site.
-8. Opcionalmente, adicione "proximidades": [{ "nome": "...", "categoria": "pet|academia|parque|mercado|cafe|saude|educacao", "distancia_m": 450 }] se descobrir algo especial perto do imóvel.
+4. "nova" deve ser booleano (true quando o imóvel for novidade recém-adicionada nesta atualização, para exibir estrelinha e selo "Nova" no mapa ao lado do valor; false para imóveis já listados anteriormente).
+5. Mantenha "id" estável para o mesmo imóvel entre atualizações (assim o usuário não perde favoritos nem anotações).
+6. Sempre tente preencher "lat" e "lng" reais em Botucatu e região (em torno de -22.88, -48.44). Se não tiver certeza exata, preencha "bairro" ou cidade vizinha (ex: "Alto", "Jardim Paraíso", "Demétria", "Rubião Júnior", "Vitoriana", "Pardinho", "Itatinga", "São Manuel") que o site posiciona automaticamente.
+7. Extraia as URLs diretas (`https://...`) das fotos reais do anúncio e coloque em `"fotos": ["https://...", "https://..."]` (até 6–8 fotos principais). O site carrega com `referrerpolicy="no-referrer"` e faz fallback automático caso algum link expire.
+8. A distância até a Casa Tata (Rua Delfim da Graça Cardoso, 1197, Alto, Botucatu - SP, 18601-542) e até parques, áreas pet, academias, mercados, cafés, saúde e educação é calculada automaticamente pelo site.
+9. Opcionalmente, adicione "proximidades": [{ "nome": "...", "categoria": "pet|academia|parque|mercado|cafe|saude|educacao", "distancia_m": 450 }] se descobrir algo especial perto do imóvel.
 ```
 
 ## Campos mínimos obrigatórios

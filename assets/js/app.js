@@ -111,6 +111,7 @@
     chacara: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3L7 10h2.8L6 15.5h12L14.2 10H17L12 3z" fill="currentColor" fill-opacity="0.18"/><path d="M12 15.5V21M7 21h10"/></svg>`,
     eye: `<svg viewBox="0 0 20 20" fill="none"><path d="M2 10c1.4-2.9 4.5-5 8-5s6.6 2.1 8 5c-1.4 2.9-4.5 5-8 5s-6.6-2.1-8-5z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="10" cy="10" r="2.3" stroke="currentColor" stroke-width="1.7"/></svg>`,
     eyeOff: `<svg viewBox="0 0 20 20" fill="none"><path d="M3 3l14 14M8.5 8.5a2.5 2.5 0 0 0 3 3M5.6 5.8C3.9 7 2.7 8.5 2 10c1.4 2.9 4.5 5 8 5 1.4 0 2.7-.3 3.9-.9M8.3 5.2c.5-.1 1.1-.2 1.7-.2 3.5 0 6.6 2.1 8 5-.5 1.1-1.3 2.1-2.2 2.9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+    star: `<svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M10 1.8l2.45 4.97 5.48.8-3.96 3.86.94 5.46L10 14.32l-4.91 2.57.94-5.46-3.96-3.86 5.48-.8L10 1.8z"/></svg>`,
   };
 
   const GROKBOT_PROMPT = `Você é um buscador de imóveis (casas e chácaras) em Botucatu e região - SP.
@@ -143,6 +144,7 @@ Sempre que encontrar imóveis relevantes, retorne APENAS um JSON válido seguind
       "chacara": true,
       "aceita_pets": true,
       "quintal": true,
+      "nova": true,
       "destaque": false,
       "descricao": "Resumo objetivo do imóvel.",
       "nota_grokbot": "Por que este imóvel vale a pena e pontos de atenção.",
@@ -158,6 +160,7 @@ Sempre que encontrar imóveis relevantes, retorne APENAS um JSON válido seguind
 Regras:
 - "finalidade": "aluguel" ou "compra".
 - "chacara": true se for chácara / sítio / propriedade rural de lazer, false se for imóvel urbano comum.
+- "nova": true quando for novidade recém-adicionada na atualização (exibe estrelinha e selo Nova no mapa ao lado do valor), false para imóveis já listados anteriormente.
 - "fotos": extraia as URLs reais (https://...) das imagens do anúncio (até 6-8 fotos); o site faz fallback automático se algum link falhar.
 - "preco", "condominio", "iptu", "area_m2", "terreno_m2": números sem "R$".
 - Mantenha o mesmo "id" para o mesmo imóvel entre atualizações (preserva favoritos e anotações).
@@ -204,6 +207,7 @@ Regras:
       sort: "casa_tata",
       pets: false,
       quintal: false,
+      novas: false,
       favoritas: false,
       ocultos: false,
       near: new Set(),
@@ -308,8 +312,13 @@ Regras:
     return state.houses.filter((h) => Boolean(state.prefs.hidden[h.id])).length;
   }
 
+  function getNovaHousesCount() {
+    return state.houses.filter((h) => !state.prefs.hidden[h.id] && Boolean(h.nova)).length;
+  }
+
   function updateSavedIndicators() {
     const hiddenCount = getHiddenHousesCount();
+    const novaCount = getNovaHousesCount();
     const savedCount = state.houses.filter(
       (h) =>
         !state.prefs.hidden[h.id] &&
@@ -322,6 +331,13 @@ Regras:
     });
     document.querySelectorAll("[data-hidden-count]").forEach((span) => {
       span.textContent = String(hiddenCount);
+    });
+
+    document.querySelectorAll('[data-toggle="novas"]').forEach((btn) => {
+      btn.hidden = novaCount === 0;
+    });
+    document.querySelectorAll("[data-nova-count]").forEach((span) => {
+      span.textContent = String(novaCount);
     });
 
     if (hiddenCount === 0 && state.savedFilter === "ocultos") {
@@ -736,6 +752,7 @@ Regras:
         ),
       ];
       const isChacara = Boolean(raw.chacara);
+      const isNova = typeof raw.nova === "boolean" ? raw.nova : normalizeText(raw.nova) === "true";
 
       const house = {
         id,
@@ -759,6 +776,7 @@ Regras:
         chacara: isChacara,
         aceita_pets: raw.aceita_pets !== false,
         quintal: Boolean(raw.quintal),
+        nova: isNova,
         destaque: Boolean(raw.destaque),
         descricao: String(raw.descricao || ""),
         nota_grokbot: String(raw.nota_grokbot || ""),
@@ -1052,6 +1070,7 @@ Regras:
         "house-pin",
         house.finalidade === "compra" ? "house-pin--compra" : "house-pin--aluguel",
         house.chacara ? "house-pin--chacara" : "",
+        house.nova ? "house-pin--nova" : "",
         isHidden ? "house-pin--hidden" : "",
         isSelected ? "is-selected" : "",
         house.id === state.hoveredHouseId ? "is-hovered" : "",
@@ -1069,6 +1088,7 @@ Regras:
                 : `<span class="house-pin__dot"></span>`
             }
             <span>${escapeHtml(formatCompactPrice(house.preco, house.finalidade))}</span>
+            ${house.nova ? `<span class="house-pin__new" title="Novidade" aria-label="Novidade">${UI_ICONS.star}<span>Nova</span></span>` : ""}
             ${isFav ? '<span class="house-pin__heart" aria-label="Favorito">♥</span>' : ""}
           </div>
         `,
@@ -1077,7 +1097,7 @@ Regras:
 
       const marker = L.marker([house.lat, house.lng], {
         icon,
-        zIndexOffset: isSelected ? 600 : 350,
+        zIndexOffset: isSelected ? 600 : house.nova ? 450 : 350,
       }).addTo(houseLayer);
 
       marker.on("click", (e) => {
@@ -1298,6 +1318,7 @@ Regras:
     if (f.minQuartos > 0) n++;
     if (f.pets) n++;
     if (f.quintal) n++;
+    if (f.novas) n++;
     if (f.favoritas) n++;
     if (f.ocultos) n++;
     n += f.near.size;
@@ -1355,8 +1376,12 @@ Regras:
     const f = state.filters;
     const q = normalizeText(f.query);
     const hiddenCount = getHiddenHousesCount();
+    const novaCount = getNovaHousesCount();
     if (hiddenCount === 0 && f.ocultos) {
       f.ocultos = false;
+    }
+    if (novaCount === 0 && f.novas) {
+      f.novas = false;
     }
 
     let list = state.houses.filter((h) => {
@@ -1372,6 +1397,7 @@ Regras:
       if (f.minQuartos > 0 && h.quartos < f.minQuartos) return false;
       if (f.pets && !h.aceita_pets) return false;
       if (f.quintal && !h.quintal) return false;
+      if (f.novas && !h.nova) return false;
       if (f.favoritas && !state.prefs.favorites[h.id]) return false;
 
       for (const cat of f.near) {
@@ -1381,7 +1407,7 @@ Regras:
 
       if (q) {
         const hay = normalizeText(
-          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")} ${h.chacara ? "chacara sitio rural campo" : "urbano casa"}`
+          `${h.titulo} ${h.bairro} ${h.endereco} ${h.tipo} ${h.descricao} ${h.nota_grokbot} ${h.tags.join(" ")} ${h.chacara ? "chacara sitio rural campo" : "urbano casa"} ${h.nova ? "nova novidade novo" : ""}`
         );
         if (!hay.includes(q)) return false;
       }
@@ -1389,6 +1415,10 @@ Regras:
     });
 
     list.sort((a, b) => {
+      if (f.sort === "novas") {
+        if (a.nova !== b.nova) return a.nova ? -1 : 1;
+        return a.casaTataDist - b.casaTataDist;
+      }
       if (f.sort === "casa_tata") return a.casaTataDist - b.casaTataDist;
       if (f.sort === "farmacia") return (a.nearestByCat.farmacia?.distance ?? Infinity) - (b.nearestByCat.farmacia?.distance ?? Infinity);
       if (f.sort === "saude") return (a.nearestByCat.saude?.distance ?? Infinity) - (b.nearestByCat.saude?.distance ?? Infinity);
@@ -1571,10 +1601,11 @@ Regras:
       .join("");
 
     return `
-      <article class="house-card ${isSelected ? "is-selected" : ""} ${isHidden ? "house-card--hidden" : ""}" data-house-id="${escapeHtml(house.id)}" role="listitem">
+      <article class="house-card ${isSelected ? "is-selected" : ""} ${house.nova ? "house-card--nova" : ""} ${isHidden ? "house-card--hidden" : ""}" data-house-id="${escapeHtml(house.id)}" role="listitem">
         <div class="house-card__media">
           ${mediaHtml}
           <div class="house-card__badges">
+            ${house.nova ? `<span class="pill-badge pill-badge--nova">${UI_ICONS.star} Nova</span>` : ""}
             <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
             ${house.chacara ? `<span class="pill-badge pill-badge--chacara">${UI_ICONS.chacara} Chácara</span>` : ""}
             ${house.destaque ? '<span class="pill-badge pill-badge--destaque">Destaque</span>' : ""}
@@ -1675,7 +1706,10 @@ Regras:
             </div>
             <div class="peek-card__info">
               <div class="peek-card__top">
-                <span class="peek-card__price">${formatCompactPrice(h.preco, h.finalidade)}${h.finalidade === "aluguel" ? "<small>/mês</small>" : ""}</span>
+                <span class="peek-card__price-wrap">
+                  <span class="peek-card__price">${formatCompactPrice(h.preco, h.finalidade)}${h.finalidade === "aluguel" ? "<small>/mês</small>" : ""}</span>
+                  ${h.nova ? `<span class="peek-nova-badge">${UI_ICONS.star} Nova</span>` : ""}
+                </span>
                 <span class="peek-card__score">${h.overallScore}</span>
               </div>
               <p class="peek-card__title">${escapeHtml(h.titulo)}</p>
@@ -2009,6 +2043,7 @@ Regras:
 
       <div class="detail-section">
         <div style="display:flex;align-items:center;gap:6px;margin-bottom:8px;flex-wrap:wrap">
+          ${house.nova ? `<span class="pill-badge pill-badge--nova">${UI_ICONS.star} Nova</span>` : ""}
           <span class="pill-badge pill-badge--${house.finalidade}">${house.finalidade === "compra" ? "Compra" : "Aluguel"}</span>
           <span class="pill-badge">${escapeHtml(house.tipo)}</span>
           ${house.chacara ? `<span class="pill-badge pill-badge--chacara">${UI_ICONS.chacara} Chácara</span>` : ""}
@@ -2504,6 +2539,7 @@ Regras:
       sort: "casa_tata",
       pets: false,
       quintal: false,
+      novas: false,
       favoritas: false,
       ocultos: false,
       near: new Set(),

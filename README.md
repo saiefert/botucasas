@@ -55,6 +55,7 @@ Basta substituir o arquivo [`data/casas.json`](data/casas.json) mantendo a estru
       "chacara": true,
       "aceita_pets": true,
       "quintal": true,
+      "nova": true,
       "nota_grokbot": "Terreno amplo com pomar e fácil acesso à Rod. Gastão Dal Farra.",
       "link": "https://..."
     }
@@ -64,6 +65,7 @@ Basta substituir o arquivo [`data/casas.json`](data/casas.json) mantendo a estru
 
 - Se `lat` e `lng` não vierem no JSON, o site posiciona o imóvel automaticamente pelo `bairro` ou cidade da região (Botucatu, Rubião Júnior, Demétria, Vitoriana, Pardinho, Itatinga, São Manuel, Pratânia, Bofete, Anhembi).
 - A propriedade `"chacara"` (`true` ou `false`) marca e filtra chácaras no mapa, nos cards, no comparador e nos detalhes.
+- A propriedade `"nova"` (`true` ou `false`) destaca imóveis recém-adicionados com estrelinha e selo **Nova** no mapa ao lado do valor, nos cards e no filtro rápido.
 - A distância até a **Casa Tata** (Rua Delfim da Graça Cardoso, 1197, Alto, Botucatu - SP, 18601-542) e para **áreas pet, parques, academias, mercados, cafés, saúde e educação** é calculada automaticamente no navegador.
 - Você também pode passar uma URL externa via query string: `?json=https://raw.githubusercontent.com/.../casas.json`.
 - Veja [`GROKBOT.md`](GROKBOT.md) para o prompt pronto de integração.

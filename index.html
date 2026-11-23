@@ -89,6 +89,7 @@
 
           <select id="sortFilter" class="select-pill" aria-label="Ordenar por">
             <option value="casa_tata">Perto da Casa Tata</option>
+            <option value="novas">Novidades primeiro</option>
             <option value="score">Melhor rotina e entorno</option>
             <option value="farmacia">Perto de Farmácia</option>
             <option value="saude">Perto de Saúde / Hospital</option>
@@ -104,6 +105,9 @@
         </div>
 
         <div class="filters__chips" role="group" aria-label="Filtros de destaque">
+          <button type="button" class="chip chip--nova-filter" data-toggle="novas" hidden>
+            <span class="chip__ico" data-ico="star"></span><span>Novas (<span data-nova-count>0</span>)</span>
+          </button>
           <button type="button" class="chip" data-chacara-quick="sim">
             <span class="chip__ico" data-ico="chacara"></span>Chácara
           </button>
@@ -337,6 +341,9 @@
         <div class="filter-group">
           <label class="filter-group__label">Características do imóvel</label>
           <div class="choice-wrap">
+            <button type="button" class="chip chip--lg chip--nova-filter" data-toggle="novas" hidden>
+              <span class="chip__ico" data-ico="star"></span><span>Só novas (<span data-nova-count>0</span>)</span>
+            </button>
             <button type="button" class="chip chip--lg" data-toggle="pets">
               <span class="chip__ico" data-ico="pet"></span>Aceita pets
             </button>
@@ -369,6 +376,7 @@
           <label class="filter-group__label" for="sheetSortSelect">Ordenar por</label>
           <select id="sheetSortSelect" class="select-full">
             <option value="casa_tata">Mais perto da Casa Tata</option>
+            <option value="novas">Novidades primeiro</option>
             <option value="score">Melhor nota de rotina e entorno</option>
             <option value="farmacia">Mais perto de Farmácia</option>
             <option value="saude">Mais perto de Saúde / Hospital</option>
