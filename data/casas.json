@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-23T19:35:25-03:00",
+  "atualizado_em": "2026-11-23T19:43:34-03:00",
   "fonte": "Grokbot",
   "cidade": "Botucatu e região - SP",
   "observacao": "Lista atual da busca de aluguel em Botucatu e cidades a até 50 km por estrada (São Manuel ~25 km, Pardinho ~28 km, Itatinga ~37 km, Pratânia ~37 km, Areiópolis ~37 km, Bofete ~44 km). Critérios: até R$ 3.500 (comentar acima de R$ 3.000), 2 quartos + edícula ou 3 quartos, terreno 200 m²+, quintal (leniente), garagem (senão 'confirmar garagem'), 2+ banheiros, térrea preferida, sobrado só com quarto no térreo, chácara residencial ok. Sem a região da Mina. Avaré (~76 km), Lençóis Paulista (~54 km) e Anhembi (~51 km) ficam fora do raio. Fora de Botucatu, o anúncio traz cidade e distância. O link principal é o do site da imobiliária, quando existe.",
@@ -420,7 +420,6 @@
       "fotos": [
         "assets/fotos/ideal-casa-campos-elisios-botucatu-sp-738/01.jpg",
         "assets/fotos/ideal-casa-campos-elisios-botucatu-sp-738/02.jpg",
-        "https://cdn.loftsites.com.br/images/36cc6727-1f5d-47e2-abd1-9aecf36b45e9/w768.webp",
         "assets/fotos/ideal-casa-campos-elisios-botucatu-sp-738/03.jpg",
         "assets/fotos/ideal-casa-campos-elisios-botucatu-sp-738/04.jpg",
         "assets/fotos/ideal-casa-campos-elisios-botucatu-sp-738/05.jpg",
@@ -631,7 +630,16 @@
         "São Manuel (~25 km)",
         "Visto no Facebook Marketplace"
       ],
-      "fotos": [],
+      "fotos": [
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/01.jpg",
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/02.jpg",
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/03.jpg",
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/04.jpg",
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/05.jpg",
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/06.jpg",
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/07.jpg",
+        "assets/fotos/anunciante-nao-identificado-marketplace-4615183048740773/08.jpg"
+      ],
       "link": "https://www.facebook.com/marketplace/item/4615183048740773/",
       "portal": "Anunciante não identificado (Marketplace)",
       "encontrado_em": "2026-11-23"
@@ -1042,8 +1050,8 @@
       ],
       "fotos": [
         "assets/fotos/garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo/01.jpg",
-        "assets/fotos/garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo/03.jpg",
         "assets/fotos/garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo/02.jpg",
+        "assets/fotos/garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo/03.jpg",
         "assets/fotos/garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo/04.jpg",
         "assets/fotos/garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo/05.jpg",
         "assets/fotos/garcia-padovan-aluga-se-casa-grande-no-jardim-continental-em-bo/06.jpg",
@@ -1168,7 +1176,6 @@
         "assets/fotos/ideal-casa-vila-padovan-botucatu-sp-723/01.jpg",
         "assets/fotos/ideal-casa-vila-padovan-botucatu-sp-723/02.jpg",
         "assets/fotos/ideal-casa-vila-padovan-botucatu-sp-723/03.jpg",
-        "https://cdn.loftsites.com.br/images/36cc6727-1f5d-47e2-abd1-9aecf36b45e9/w768.webp",
         "assets/fotos/ideal-casa-vila-padovan-botucatu-sp-723/04.jpg",
         "assets/fotos/ideal-casa-vila-padovan-botucatu-sp-723/05.jpg",
         "assets/fotos/ideal-casa-vila-padovan-botucatu-sp-723/06.jpg",
@@ -1461,7 +1468,16 @@
         "Térrea",
         "Visto no Facebook Marketplace"
       ],
-      "fotos": [],
+      "fotos": [
+        "assets/fotos/fbmkt-2593402167781379/01.jpg",
+        "assets/fotos/fbmkt-2593402167781379/02.jpg",
+        "assets/fotos/fbmkt-2593402167781379/03.jpg",
+        "assets/fotos/fbmkt-2593402167781379/04.jpg",
+        "assets/fotos/fbmkt-2593402167781379/05.jpg",
+        "assets/fotos/fbmkt-2593402167781379/06.jpg",
+        "assets/fotos/fbmkt-2593402167781379/07.jpg",
+        "assets/fotos/fbmkt-2593402167781379/08.jpg"
+      ],
       "link": "https://www.facebook.com/marketplace/item/2593402167781379/",
       "portal": "Josy Garcia (Creci 306560F)",
       "encontrado_em": "2026-11-23"
@@ -1631,9 +1647,9 @@
       ],
       "fotos": [
         "assets/fotos/garcia-padovan-aluga-se-excelente-casa-proximo-ao-ginasio-munic/01.jpg",
+        "assets/fotos/garcia-padovan-aluga-se-excelente-casa-proximo-ao-ginasio-munic/02.jpg",
         "assets/fotos/garcia-padovan-aluga-se-excelente-casa-proximo-ao-ginasio-munic/03.jpg",
         "assets/fotos/garcia-padovan-aluga-se-excelente-casa-proximo-ao-ginasio-munic/04.jpg",
-        "assets/fotos/garcia-padovan-aluga-se-excelente-casa-proximo-ao-ginasio-munic/02.jpg",
         "assets/fotos/garcia-padovan-aluga-se-excelente-casa-proximo-ao-ginasio-munic/05.jpg",
         "assets/fotos/garcia-padovan-aluga-se-excelente-casa-proximo-ao-ginasio-munic/06.jpg"
       ],
