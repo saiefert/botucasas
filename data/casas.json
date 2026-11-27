@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-27T19:18:14-03:00",
+  "atualizado_em": "2026-11-27T19:45:06-03:00",
   "fonte": "Grokbot",
   "cidade": "Botucatu e região - SP",
   "observacao": "Lista atual da busca de aluguel em Botucatu e cidades a até 50 km por estrada (São Manuel ~25 km, Pardinho ~28 km, Itatinga ~37 km, Pratânia ~37 km, Areiópolis ~37 km, Bofete ~44 km). Critérios: até R$ 3.500 (comentar acima de R$ 3.000), 2 quartos + edícula ou 3 quartos, terreno 200 m²+, quintal (leniente), garagem (senão 'confirmar garagem'), 2+ banheiros, térrea preferida, sobrado só com quarto no térreo, chácara residencial ok. Sem a região da Mina. Avaré (~76 km), Lençóis Paulista (~54 km) e Anhembi (~51 km) ficam fora do raio. Fora de Botucatu, o anúncio traz cidade e distância. O link principal é o do site da imobiliária, quando existe.",
@@ -929,7 +929,16 @@
         "Térrea",
         "Confirmar garagem"
       ],
-      "fotos": [],
+      "fotos": [
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/01.jpg",
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/02.jpg",
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/03.jpg",
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/04.jpg",
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/05.jpg",
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/06.jpg",
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/07.jpg",
+        "assets/fotos/liege-ferrari-creci-299693-878280658640679/08.jpg"
+      ],
       "link": "https://www.facebook.com/marketplace/item/878280658640679/",
       "portal": "Liège Ferrari (CRECI 299693)",
       "encontrado_em": "2026-11-24"
@@ -958,7 +967,7 @@
       "destaque": false,
       "reservada": false,
       "descricao": "NOVA 27/11: 2q (1 suíte), banheiro aos fundos + área gourmet com churrasqueira + quarto de despejo (tipo edícula), terreno 250 m², 150 m² construídos. Confirmar térrea, garagem e quintal com grama/terra",
-      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 27/11: 2q (1 suíte), banheiro aos fundos + área gourmet com churrasqueira + quarto de despejo (tipo edícula), terreno 250 m², 150 m² construídos. Confirmar térrea, garagem e quintal com grama/terra Também aparece em: OLX 1556503193",
+      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 27/11: 2q (1 suíte), banheiro aos fundos + área gourmet com churrasqueira + quarto de despejo (tipo edícula), terreno 250 m², 150 m² construídos. Confirmar térrea, garagem e quintal com grama/terra Também aparece em: https://sp.olx.com.br/regiao-de-bauru-e-marilia/imoveis/casa-com-2-quartos-sendo-1-suite-area-gourmet-com-churrasqueira-quarto-de-despejo-e-banh-1556503193",
       "tags": [
         "Térrea",
         "Confirmar garagem"
@@ -1142,7 +1151,7 @@
       "encontrado_em": "2026-11-09"
     },
     {
-      "id": "re-max-invest-via-olx-botucatupe3500sf1",
+      "id": "re-max-invest-via-olx-casa-3-dormitorios-sendo-uma-suite-com-edicula-1",
       "titulo": "Casa térrea 3 quartos — Centro",
       "finalidade": "aluguel",
       "tipo": "Casa térrea",
@@ -1151,8 +1160,8 @@
       "iptu": null,
       "bairro": "Centro",
       "cidade": "Botucatu",
-      "lat": -22.885344,
-      "lng": -48.445538,
+      "lat": -22.88527,
+      "lng": -48.445512,
       "quartos": 3,
       "suites": 1,
       "banheiros": 3,
@@ -1170,16 +1179,13 @@
         "Térrea"
       ],
       "fotos": [
-        "https://static.olx.com.br/cd/vi/images/olx-share.jpg",
         "https://img.olx.com.br/images/22/221639820059938.jpg",
         "https://img.olx.com.br/images/22/225656461519412.jpg",
         "https://img.olx.com.br/images/21/219630585853429.jpg",
         "https://img.olx.com.br/images/22/220637589642236.jpg",
-        "https://img.olx.com.br/images/22/224693340933723.jpg",
-        "https://img.olx.com.br/thumbs700x500/22/221639820059938.webp",
-        "https://img.olx.com.br/thumbs700x500/40/405674103007460.webp"
+        "https://img.olx.com.br/images/22/224693340933723.jpg"
       ],
-      "link": "https://www.olx.com.br/imoveis/aluguel/casas/estado-sp/botucatu?pe=3500&sf=1",
+      "link": "https://sp.olx.com.br/regiao-de-bauru-e-marilia/imoveis/casa-3-dormitorios-sendo-uma-suite-com-edicula-1556292917",
       "portal": "RE/MAX Invest (via OLX)",
       "encontrado_em": "2026-11-27"
     },
@@ -1585,7 +1591,16 @@
       "tags": [
         "Térrea"
       ],
-      "fotos": [],
+      "fotos": [
+        "assets/fotos/battaglia-assessoria-1370816484911236/01.jpg",
+        "assets/fotos/battaglia-assessoria-1370816484911236/02.jpg",
+        "assets/fotos/battaglia-assessoria-1370816484911236/03.jpg",
+        "assets/fotos/battaglia-assessoria-1370816484911236/04.jpg",
+        "assets/fotos/battaglia-assessoria-1370816484911236/05.jpg",
+        "assets/fotos/battaglia-assessoria-1370816484911236/06.jpg",
+        "assets/fotos/battaglia-assessoria-1370816484911236/07.jpg",
+        "assets/fotos/battaglia-assessoria-1370816484911236/08.jpg"
+      ],
       "link": "https://www.facebook.com/marketplace/item/1370816484911236/",
       "portal": "Battaglia Assessoria Imobiliária",
       "encontrado_em": "2026-11-27"
