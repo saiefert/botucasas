@@ -1,5 +1,5 @@
 {
-  "atualizado_em": "2026-11-28T13:21:07-03:00",
+  "atualizado_em": "2026-11-28T13:25:42-03:00",
   "fonte": "Grokbot",
   "cidade": "Botucatu e região - SP",
   "observacao": "Lista atual da busca de aluguel em Botucatu e cidades a até 50 km por estrada (São Manuel ~25 km, Pardinho ~28 km, Itatinga ~37 km, Pratânia ~37 km, Areiópolis ~37 km, Bofete ~44 km). Critérios: até R$ 3.500 (comentar acima de R$ 3.000), 2 quartos + edícula ou 3 quartos, terreno 200 m²+, quintal (leniente), garagem (senão 'confirmar garagem'), 2+ banheiros, térrea preferida, sobrado só com quarto no térreo, chácara residencial ok. Sem a região da Mina. Avaré (~76 km), Lençóis Paulista (~54 km) e Anhembi (~51 km) ficam fora do raio. Fora de Botucatu, o anúncio traz cidade e distância. O link principal é o do site da imobiliária, quando existe.",
@@ -1586,12 +1586,21 @@
       "nova": true,
       "destaque": false,
       "reservada": false,
-      "descricao": "NOVA 28/11 (Marketplace): 2q (1 suíte)/2b, sala/cozinha conjugadas, quintal nos fundos, garagem com portão eletrônico, armários planejados, seguro fiança. Foto da fachada: portão eletrônico alto, muro, sem escada visível (térrea provável). Só 2 quartos: confirmar se tem edícula, terreno e quintal. Fotos locais não salvas.",
-      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 28/11 (Marketplace): 2q (1 suíte)/2b, sala/cozinha conjugadas, quintal nos fundos, garagem com portão eletrônico, armários planejados, seguro fiança. Foto da fachada: portão eletrônico alto, muro, sem escada visível (térrea provável). Só 2 quartos: confirmar se tem edícula, terreno e quintal. Fotos locais não salvas.",
+      "descricao": "NOVA 28/11 (Marketplace): 2q (1 suíte)/2b, sala/cozinha conjugadas, quintal nos fundos, garagem com portão eletrônico, armários planejados, seguro fiança. Foto da fachada: portão eletrônico alto, muro, sem escada visível (térrea provável). Só 2 quartos: confirmar se tem edícula, terreno e quintal.",
+      "nota_grokbot": "Classificação da busca: a confirmar. NOVA 28/11 (Marketplace): 2q (1 suíte)/2b, sala/cozinha conjugadas, quintal nos fundos, garagem com portão eletrônico, armários planejados, seguro fiança. Foto da fachada: portão eletrônico alto, muro, sem escada visível (térrea provável). Só 2 quartos: confirmar se tem edícula, terreno e quintal.",
       "tags": [
         "Térrea"
       ],
-      "fotos": [],
+      "fotos": [
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/01.jpg",
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/02.jpg",
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/03.jpg",
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/04.jpg",
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/05.jpg",
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/06.jpg",
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/07.jpg",
+        "assets/fotos/mara-ferreira-marketplace-1777699916856660/08.jpg"
+      ],
       "link": "https://www.facebook.com/marketplace/item/1777699916856660/",
       "portal": "Mara Ferreira (Marketplace)",
       "encontrado_em": "2026-11-28"
